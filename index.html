@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pura Selva | Sabores Amazónicos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="selva-background"></div>
+
+    <main class="app">
+
+        <!-- CABECERA -->
+        <header class="topbar">
+
+            <button class="menu-btn" onclick="mostrarMensaje()">
+                ☰
+            </button>
+
+            <div class="mini-logo">
+                🌿 PURA SELVA
+            </div>
+
+            <div class="delivery-status">
+                🛵
+                <span>
+                    DELIVERY
+                    <small>Disponible</small>
+                </span>
+            </div>
+
+        </header>
+
+
+        <!-- PORTADA -->
+        <section class="hero">
+
+            <div class="decoracion hoja-1">🌿</div>
+            <div class="decoracion hoja-2">🍃</div>
+            <div class="decoracion hoja-3">🌿</div>
+            <div class="decoracion hoja-4">🍃</div>
+
+            <div class="logo-box">
+
+                <div class="logo-text">
+
+                    <span>PURA</span>
+
+                    <strong>SELVA</strong>
+
+                </div>
+
+                <div class="logo-line"></div>
+
+                <p>
+                    SABORES QUE NACEN
+                    <br>
+                    DEL CORAZÓN DE LA SELVA
+                </p>
+
+                <div class="amazon-badge">
+                    🌿 100% AMAZÓNICO
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTOS -->
+        <section class="contact-section">
+
+            <div class="section-title">
+                <span>📲</span>
+                CONTÁCTANOS
+            </div>
+
+
+            <div class="contact-grid">
+
+                <!-- WHATSAPP 1 -->
+                <a
+                    href="https://wa.me/51940600188"
+                    class="contact-card whatsapp"
+                >
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <div>
+                        <small>WHATSAPP / PEDIDOS</small>
+                        <strong>940 600 188</strong>
+                    </div>
+
+                </a>
+
+
+                <!-- WHATSAPP 2 -->
+                <a
+                    href="https://wa.me/51925928838"
+                    class="contact-card whatsapp"
+                >
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <div>
+                        <small>WHATSAPP / PEDIDOS</small>
+                        <strong>925 928 838</strong>
+                    </div>
+
+                </a>
+
+
+                <!-- RESERVAS -->
+                <a
+                    href="tel:+51986774110"
+                    class="contact-card phone"
+                >
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+                        <small>RESERVAS / LLAMADAS</small>
+                        <strong>986 774 110</strong>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BOTONES -->
+        <section class="actions">
+
+            <!-- CARTA -->
+            <button
+                class="main-action carta"
+                onclick="abrirCarta()"
+            >
+
+                <div class="action-icon">
+                    🍽️
+                </div>
+
+                <div class="action-info">
+
+                    <strong>
+                        VER LA CARTA
+                    </strong>
+
+                    <span>
+                        Descubre nuestros sabores amazónicos
+                    </span>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </button>
+
+
+            <!-- WHATSAPP -->
+            <a
+                href="https://wa.me/51940600188?text=Hola%20Pura%20Selva%20🌴%20quiero%20hacer%20un%20pedido."
+                class="main-action"
+            >
+
+                <div class="action-icon">
+                    💬
+                </div>
+
+                <div class="action-info">
+
+                    <strong>
+                        PEDIR POR WHATSAPP
+                    </strong>
+
+                    <span>
+                        Haz tu pedido de forma rápida
+                    </span>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- RESERVA -->
+            <a
+                href="tel:+51986774110"
+                class="main-action"
+            >
+
+                <div class="action-icon">
+                    📞
+                </div>
+
+                <div class="action-info">
+
+                    <strong>
+                        RESERVAR / LLAMAR
+                    </strong>
+
+                    <span>
+                        Reserva tu mesa con nosotros
+                    </span>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </a>
+
+
+            <!-- DELIVERY -->
+            <a
+                href="https://wa.me/51940600188?text=Hola%20Pura%20Selva%20🌴%20quiero%20consultar%20por%20delivery."
+                class="main-action"
+            >
+
+                <div class="action-icon">
+                    🛵
+                </div>
+
+                <div class="action-info">
+
+                    <strong>
+                        DELIVERY
+                    </strong>
+
+                    <span>
+                        El sabor de la selva hasta tu hogar
+                    </span>
+
+                </div>
+
+                <div class="action-arrow">
+                    →
+                </div>
+
+            </a>
+
+        </section>
+
+
+        <!-- CARACTERÍSTICAS -->
+        <section class="features">
+
+            <div>
+                <span>🌿</span>
+                <small>
+                    PRODUCTOS
+                    <br>
+                    FRESCOS
+                </small>
+            </div>
+
+            <div>
+                <span>🍲</span>
+                <small>
+                    SABOR
+                    <br>
+                    AMAZÓNICO
+                </small>
+            </div>
+
+            <div>
+                <span>❤️</span>
+                <small>
+                    HECHO CON
+                    <br>
+                    PASIÓN
+                </small>
+            </div>
+
+            <div>
+                <span>🌴</span>
+                <small>
+                    100%
+                    <br>
+                    SELVA
+                </small>
+            </div>
+
+        </section>
+
+
+        <!-- PIE -->
+        <footer>
+
+            <div class="footer-decoration">
+                🌿 ━━━━━━━━━ 🌿
+            </div>
+
+            <strong>
+                ¡GRACIAS POR ELEGIRNOS!
+            </strong>
+
+            <p>
+                PURA SELVA
+                <br>
+                SABORES QUE NACEN DEL CORAZÓN DE LA SELVA
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <!-- PANTALLA DE CARTA -->
+
+    <section
+        id="carta"
+        class="carta-screen"
+    >
+
+        <button
+            class="back-btn"
+            onclick="cerrarCarta()"
+        >
+            ← VOLVER
+        </button>
+
+
+        <div class="carta-header">
+
+            <div class="carta-logo">
+                🌿
+            </div>
+
+            <h1>
+                NUESTRA CARTA
+            </h1>
+
+            <p>
+                SABORES DE LA AMAZONÍA
+            </p>
+
+        </div>
+
+
+        <div class="categories">
+
+            <button>
+                🍢
+                <span>ENTRADAS</span>
+            </button>
+
+            <button>
+                🍲
+                <span>SOPAS</span>
+            </button>
+
+            <button>
+                🍽️
+                <span>FONDOS</span>
+            </button>
+
+            <button>
+                🍱
+                <span>COMBOS</span>
+            </button>
+
+            <button>
+                🥤
+                <span>BEBIDAS</span>
+            </button>
+
+            <button>
+                ➕
+                <span>ADICIONALES</span>
+            </button>
+
+        </div>
+
+
+        <div class="carta-message">
+
+            <div>
+                🌴
+            </div>
+
+            <h2>
+                PRÓXIMAMENTE
+            </h2>
+
+            <p>
+                Estamos preparando nuestra
+                carta digital para ti.
+            </p>
+
+            <div>
+                🌿
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
