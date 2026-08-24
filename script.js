@@ -1,1305 +1,444 @@
-// =========================================================
-// 🌴 PURA SELVA
-// CARTA DIGITAL COMPLETA
-// =========================================================
-
-
-// =========================================================
-// 📋 CARTA REAL
-// Precios y descripciones tomados del archivo Word
-// =========================================================
-
-const carta = {
-
-    // =====================================================
-    // 🍢 ENTRADAS
-    // =====================================================
-
-    entradas: [
-
-        {
-            nombre: "Brochetas Amazónicas",
-            precio: 20,
-            descripcion:
-                "Cecina, chorizo, plátano y ensalada de cocona"
-        },
-
-        {
-            nombre: "Salchipapa Amazónica",
-            precio: 20,
-            descripcion:
-                "Cecina, chorizo, papas fritas y ensalada de cocona"
-        },
-
-        {
-            nombre: "Canastillas Amazónicas",
-            precio: 25,
-            descripcion:
-                "Ensalada de cocona"
-        }
-
-    ],
-
-
-    // =====================================================
-    // 🍲 SOPAS
-    // =====================================================
-
-    sopas: [
-
-        {
-            nombre: "Chilcano de Carachama",
-            precio: 45,
-            descripcion:
-                "Plátano sancochado y ají charapita"
-        },
-
-        {
-            nombre: "Chilcano de Palometa",
-            precio: 35,
-            descripcion:
-                "Plátano sancochado y ají charapita"
-        },
-
-        {
-            nombre: "Chilcano de Doncella",
-            precio: 35,
-            descripcion:
-                "Arroz, plátano sancochado y ají charapita"
-        },
-
-        {
-            nombre: "Pango de Sábalo",
-            precio: 70,
-            descripcion:
-                "Maduro sancochado y salsa de cocona"
-        },
-
-        {
-            nombre: "Pango de Boquichico",
-            precio: 40,
-            descripcion:
-                "Maduro sancochado y salsa de cocona"
-        },
-
-        {
-            nombre: "Pango de Paiche",
-            precio: 40,
-            descripcion:
-                "Maduro sancochado y salsa de cocona"
-        }
-
-    ],
-
-
-    // =====================================================
-    // 🍽️ FONDOS
-    // =====================================================
-
-    fondos: [
-
-        {
-            nombre: "Pescado envuelto en hoja",
-            precio: 70,
-            descripcion:
-                "Tacacho o patacones o plátano asado"
-        },
-
-        {
-            nombre: "Juane de Gallina",
-            precio: 20,
-            descripcion:
-                "Patacones o maduro frito, salsa de cocona"
-        },
-
-        {
-            nombre: "Tacacho con Cecina",
-            precio: 25,
-            descripcion:
-                "Chorizo, salsa de cocona"
-        },
-
-        {
-            nombre: "Chaufa Amazónico",
-            precio: 25,
-            descripcion:
-                "Cecina, chorizo en trozos, maduro frito"
-        },
-
-        {
-            nombre: "Cecina con Patacones",
-            precio: 25,
-            descripcion:
-                "Chorizo, salsa de cocona"
-        },
-
-        {
-            nombre: "Maparate frito",
-            precio: 35,
-            descripcion:
-                "Maduro frito o patacones, arroz blanco, salsa de cocona"
-        },
-
-        {
-            nombre: "Doncella frito",
-            precio: 40,
-            descripcion:
-                "Maduro frito o patacones, arroz blanco, salsa de cocona"
-        },
-
-        {
-            nombre: "Paiche frito",
-            precio: 40,
-            descripcion:
-                "Maduro frito o patacones, arroz blanco, salsa de cocona"
-        },
-
-        {
-            nombre: "Palometa frita",
-            precio: 35,
-            descripcion:
-                "Maduro frito o patacones, arroz blanco, salsa de cocona"
-        },
-
-        {
-            nombre: "Sábalo frito",
-            precio: 70,
-            descripcion:
-                "Maduro frito o patacones, arroz blanco, salsa de cocona"
-        }
-
-    ],
-
-
-    // =====================================================
-    // 🍱 COMBOS
-    // =====================================================
-
-    combos: [
-
-        {
-            nombre: "Combo Mediano de Juane",
-            precio: 45,
-            descripcion:
-                "1 juane, 1 cecina frita, 1 chorizo frito, maduro frito y salsa de cocona"
-        },
-
-        {
-            nombre: "Combo Mediano Chaufa",
-            precio: 60,
-            descripcion:
-                "2 tacachos, 1 cecina frita, 1 chorizo frito, arroz blanco, maduro frito y salsa de cocona"
-        },
-
-        {
-            nombre: "Combo de Chaufa Mixto",
-            precio: 50,
-            descripcion:
-                "Arroz chaufa mixta, 1 cecina frita, 1 chorizo frito, maduro frito o patacones y salsa de cocona"
-        },
-
-        {
-            nombre: "Combo de Juane Grande",
-            precio: 70,
-            descripcion:
-                "1 tacacho, 2 cecinas fritas, 2 chorizos fritos, 1 juane, maduro frito y salsa de cocona"
-        },
-
-        {
-            nombre: "Combo de Chaufa Grande",
-            precio: 80,
-            descripcion:
-                "2 cecinas fritas, 2 chorizos fritos, 2 tacachos, maduro frito, 1 vaso de refresco de cocona o Camú Camú y salsa de cocona"
-        },
-
-        {
-            nombre: "Combo Grande de Tacacho",
-            precio: 85,
-            descripcion:
-                "3 tacachos, 2 cecinas fritas, 2 chorizos fritos, patacones, maduro frito, cecina y chorizo picado y salsa de cocona"
-        }
-
-    ],
-
-
-    // =====================================================
-    // 🥤 BEBIDAS
-    // =====================================================
-
-    bebidas: [
-
-        // JUGOS
-
-        {
-            nombre: "Cocona 1/5 Litro",
-            precio: 10,
-            descripcion:
-                "Jugo de cocona"
-        },
-
-        {
-            nombre: "Cocona 1 Litro",
-            precio: 15,
-            descripcion:
-                "Jugo de cocona"
-        },
-
-        {
-            nombre: "Camú Camú 1/5 Litro",
-            precio: 10,
-            descripcion:
-                "Jugo de Camú Camú"
-        },
-
-        {
-            nombre: "Camú Camú 1 Litro",
-            precio: 15,
-            descripcion:
-                "Jugo de Camú Camú"
-        },
-
-        {
-            nombre: "Aguajina 1/5 Litro",
-            precio: 10,
-            descripcion:
-                "Aguajina"
-        },
-
-        {
-            nombre: "Aguajina 1 Litro",
-            precio: 15,
-            descripcion:
-                "Aguajina"
-        },
-
-
-        // GASEOSAS
-
-        {
-            nombre: "Agua Mineral",
-            precio: 3,
-            descripcion:
-                "Agua mineral"
-        },
-
-        {
-            nombre: "Inka Cola 1/5 Litro",
-            precio: 3.50,
-            descripcion:
-                "Gaseosa"
-        },
-
-        {
-            nombre: "Coca Cola 1/5 Litro",
-            precio: 3.50,
-            descripcion:
-                "Gaseosa"
-        },
-
-        {
-            nombre: "Inka Cola Gordita",
-            precio: 5,
-            descripcion:
-                "Gaseosa"
-        },
-
-        {
-            nombre: "Coca Cola 1 Litro",
-            precio: 8,
-            descripcion:
-                "Gaseosa"
-        },
-
-        {
-            nombre: "Inka Cola 1 Litro",
-            precio: 8,
-            descripcion:
-                "Gaseosa"
-        },
-
-
-        // CERVEZAS
-
-        {
-            nombre: "Cristal",
-            precio: 8,
-            descripcion:
-                "Cerveza"
-        },
-
-        {
-            nombre: "Pilsen",
-            precio: 9,
-            descripcion:
-                "Cerveza"
-        },
-
-        {
-            nombre: "Cusqueña de Trigo",
-            precio: 10,
-            descripcion:
-                "Cerveza"
-        },
-
-        {
-            nombre: "Cusqueña Negra",
-            precio: 10,
-            descripcion:
-                "Cerveza"
-        },
-
-        {
-            nombre: "Cerveza San Juan",
-            precio: 10,
-            descripcion:
-                "Cerveza"
-        },
-
-
-        // TRAGOS AMAZÓNICOS
-
-        {
-            nombre: "R.C.",
-            precio: 48,
-            descripcion:
-                "Trago amazónico"
-        },
-
-        {
-            nombre: "7 Raíces",
-            precio: 48,
-            descripcion:
-                "Trago amazónico"
-        },
-
-        {
-            nombre: "Uvachado",
-            precio: 48,
-            descripcion:
-                "Trago amazónico"
-        }
-
-    ],
-
-
-    // =====================================================
-    // ➕ ADICIONALES
-    // =====================================================
-
-    adicionales: [
-
-        {
-            nombre: "Rosquita de Yuca",
-            precio: 3,
-            descripcion:
-                "2 por S/ 5.00"
-        },
-
-        {
-            nombre: "Ñuto",
-            precio: 3,
-            descripcion:
-                "2 por S/ 5.00"
-        },
-
-        {
-            nombre: "Arroz Blanco",
-            precio: 8,
-            descripcion:
-                "Porción"
-        },
-
-        {
-            nombre: "Porción de Maduro",
-            precio: 8,
-            descripcion:
-                "Porción"
-        },
-
-        {
-            nombre: "Porción de Patacones",
-            precio: 15,
-            descripcion:
-                "Porción"
-        },
-
-        {
-            nombre: "Tacacho",
-            precio: 13,
-            descripcion:
-                "Porción"
-        }
-
-    ]
-
+const M={
+"Entradas":{i:"🍢",s:"Para empezar con sabor amazónico",p:[
+["Brochetas Amazónicas",20,"Cecina, chorizo, plátano y ensalada de cocona","images/entradas/brochetas-amazonicas.jpg"],
+["Salchipapa Amazónica",20,"Cecina, chorizo, papas fritas y ensalada de cocona","images/entradas/salchipapa-amazonica.jpg"],
+["Canastillas Amozonicas",25,"Ensalada de cocona","images/entradas/canastillas-amazonicas.jpg"]]},
+
+"Sopas":{i:"🍲",s:"Calditos y sabores de nuestra selva",p:[
+["Chilcano de Carachama",45,"Plátano sancochado y ají charapita","images/sopas/chilcano-carachama.jpg"],
+["Chilcano de Palometa",35,"Plátano sancochado y ají charapita","images/sopas/chilcano-palometa.jpg"],
+["Chilcano de doncella",35,"Arroz, plátano sancochado, ají charapita","images/sopas/chilcano-doncella.jpg"],
+["Pango de Sábalo",70,"Maduro sancochado, salsa de cocona","images/sopas/pango-sabalo.jpg"],
+["Pango de Boquichico",40,"Maduro sancochado, salsa de cocona","images/sopas/pango-boquichico.jpg"],
+["Pango de Paiche",40,"Maduro sancochado, salsa de cocona","images/sopas/pango-paiche.jpg"]]},
+
+"Fondos":{i:"🍽️",s:"Nuestros platos fuertes",p:[
+["Pescado envuelto en hoja",70,"Tacacho o patacones o plátano asado","images/fondos/pescado-envuelto-en-hoja.jpg"],
+["Juane de Gallina",20,"Patacones o maduro frito, salsa de cocona","images/fondos/juane-de-gallina.jpg"],
+["Tacacho con cecina",25,"Chorizo, salsa de cocona","images/fondos/tacacho-con-cecina.jpg"],
+["Chaufa Amazónico",25,"Cecina, chorizo en trozos, maduro frito","images/fondos/chaufa-amazonico.jpg"],
+["Cecina con Patacones",25,"Chorizo, salsa de cocona","images/fondos/cecina-con-patacones.jpg"],
+["Maparate frito",35,"Maduro frito o patacones, arroz blanco, salsa de cocona","images/fondos/maparate-frito.jpg"],
+["Doncella frito",40,"Maduro frito o patacones, arroz blanco, salsa de cocona","images/fondos/doncella-frito.jpg"],
+["Paiche frito",40,"Maduro frito o patacones, arroz blanco, salsa de cocona","images/fondos/paiche-frito.jpg"],
+["Palometa frita",35,"Maduro frito o patacones, arroz blanco, salsa de cocona","images/fondos/palometa-frita.jpg"],
+["Sábalo frito",70,"Maduro frito o patacones, arroz blanco, salsa de cocona","images/fondos/sabalo-frito.jpg"]]},
+
+"Combos":{i:"🍛",s:"Combos para compartir y disfrutar",p:[
+["Combo Mediano de Juane",45,"1 juane · 1 cecina frita · 1 chorizo frito · Maduro frito · Salsa de cocona","images/combos/combo-mediano-juane.jpg"],
+["Combo Mediano Chaufa",60,"2 tacachos · 1 cecina frita · 1 chorizo frito · Arroz blanco · Maduro frito · Salsa de cocona","images/combos/combo-mediano-chaufa.jpg"],
+["Combo de Chaufa mixto",50,"Arroz chaufa mixta · 1 cecina frita · 1 chorizo frito · Maduro frito o Patacones · Salsa de cocona","images/combos/combo-chaufa-mixto.jpg"],
+["Combo de Juane Grande",70,"1 tacacho · 2 cecinas fritas · 2 chorizos fritos · 1 juanes · Maduro frito · Salsa de cocona","images/combos/combo-juane-grande.jpg"],
+["Combo de chaufa Grande",80,"2 cecinas fritas · 2 chorizos fritos · 2 tacachos · Maduro frito · 1 vaso refresco de cocona o Camú Camú · Salsa de cocona","images/combos/combo-chaufa-grande.jpg"],
+["Combo Grande de tacacho",85,"3 tacacho · 2 cecinas fritas · 2 chorizos fritos · Patacones · Maduro frito · Cecina y chorizo picado · Salsa de cocona","images/combos/combo-grande-tacacho.jpg"]]},
+
+"Bebidas":{i:"🥭",s:"Jugos de frutas amazónicas",p:[
+["1/5 Lit. cocona",10,"Jugo de cocona","images/bebidas/cocona-1-5.jpg"],
+["1 Lit. cocona",15,"Jugo de cocona","images/bebidas/cocona-1-litro.jpg"],
+["1/5 Lit. Camú Camú",10,"Jugo de Camú Camú","images/bebidas/camu-camu-1-5.jpg"],
+["1 Lit. Camú Camú",15,"Jugo de Camú Camú","images/bebidas/camu-camu-1-litro.jpg"],
+["1/5 Lit. Aguajina",10,"Refresco de aguaje","images/bebidas/aguajina-1-5.jpg"],
+["1 Lit. Aguajina",15,"Refresco de aguaje","images/bebidas/aguajina-1-litro.jpg"]]},
+
+"Gaseosas":{i:"🥤",s:"Bebidas frías",p:[
+["Agua Mineral",3,"","images/gaseosas/agua-mineral.jpg"],
+["Inka cola 1/5 lit",3.5,"","images/gaseosas/inka-cola-1-5.jpg"],
+["Coca Cola 1/5 lit",3.5,"","images/gaseosas/coca-cola-1-5.jpg"],
+["Inka cola gordita",5,"","images/gaseosas/inka-cola-gordita.jpg"],
+["Coca cola 1 lit",8,"","images/gaseosas/coca-cola-1-litro.jpg"],
+["Inka cola 1 lit",8,"","images/gaseosas/inka-cola-1-litro.jpg"]]},
+
+"Cervezas":{i:"🍺",s:"Cervezas de la carta",p:[
+["Cristal",8,"","images/cervezas/cristal.jpg"],
+["Pilsen",9,"","images/cervezas/pilsen.jpg"],
+["Cusqueña de Trigo",10,"","images/cervezas/cusquena-trigo.jpg"],
+["Cusqueña Negra",10,"","images/cervezas/cusquena-negra.jpg"],
+["Cerveza san Juan",10,"","images/cervezas/san-juan.jpg"]]},
+
+"Tragos Amazónicos":{i:"🍹",s:"Licores de la selva",p:[
+["R.C.",48,"","images/tragos/rc.jpg"],
+["7 Raices",48,"","images/tragos/7-raices.jpg"],
+["Uvachado",48,"","images/tragos/uvachado.jpg"]]},
+
+"Adicicionales":{i:"🥣",s:"Para acompañar tu plato",p:[
+["Rosquita de yuca",3,"2X 5.00","images/adicionales/rosquita-de-yuca.jpg"],
+["Ñuto",3,"2X 5.00","images/adicionales/nuto.jpg"],
+["Arroz blanco",8,"","images/adicionales/arroz-blanco.jpg"],
+["Porción de Maduro",8,"","images/adicionales/porcion-de-maduro.jpg"],
+["Porcion de patacones",15,"","images/adicionales/porcion-de-patacones.jpg"],
+["Tacacho",13,"","images/adicionales/tacacho.jpg"]]}
 };
 
+const $=s=>document.querySelector(s);
 
-// =========================================================
-// 🛒 CARRITO
-// =========================================================
+const money=n=>`S/ ${Number(n).toFixed(2)}`;
 
-let carrito = [];
+let current=null;
 
+let cart=JSON.parse(
+    localStorage.getItem("puraSelvaCart")||"[]"
+);
 
-// =========================================================
-// ELEMENTO CARTA
-// =========================================================
+const cat=$("#categories");
+const prod=$("#products");
+const grid=$("#categoryGrid");
+const pg=$("#productGrid");
 
-const cartaScreen =
-    document.getElementById("carta");
+/* CATEGORÍAS */
 
+function cats(){
 
-// =========================================================
-// 🍽️ ABRIR CARTA
-// =========================================================
+    grid.innerHTML="";
 
-function abrirCarta() {
+    Object.entries(M).forEach(([n,d])=>{
 
-    cartaScreen.classList.add("active");
+        let b=document.createElement("button");
 
-    document.body.style.overflow = "hidden";
+        b.className="categoryCard";
 
-    mostrarCategorias();
+        b.innerHTML=`
+            <span class="icon">${d.i}</span>
+            <span class="arrow">→</span>
+            <h2>${n}</h2>
+            <p>${d.p.length} opciones · ${d.s}</p>
+        `;
 
+        b.onclick=()=>openCat(n);
+
+        grid.appendChild(b);
+
+    });
 }
 
+/* ABRIR CATEGORÍA */
 
-// =========================================================
-// ← CERRAR CARTA
-// =========================================================
+function openCat(n){
 
-function cerrarCarta() {
+    current=n;
 
-    cartaScreen.classList.remove("active");
+    cat.classList.remove("active");
 
-    document.body.style.overflow = "auto";
+    prod.classList.add("active");
 
+    $("#backBtn").hidden=false;
+
+    $("#catTitle").textContent=n;
+
+    $("#catSub").textContent=M[n].s;
+
+    $("#catIcon").textContent=M[n].i;
+
+    $("#search").value="";
+
+    render(M[n].p);
 }
 
+/* MOSTRAR PRODUCTOS */
 
-// =========================================================
-// ☰ MENÚ PRINCIPAL
-// =========================================================
+function render(items){
 
-function mostrarMensaje() {
+    pg.innerHTML="";
 
-    alert(
+    items.forEach(x=>{
 
-        "🌴 PURA SELVA 🌴\n\n" +
+        let [n,p,d,img]=x;
 
-        "Sabores que nacen del corazón de la selva.\n\n" +
+        let c=document.createElement("article");
 
-        "📲 PEDIDOS Y WHATSAPP\n" +
-        "940 600 188\n" +
-        "925 928 838\n\n" +
+        c.className="productCard";
 
-        "📞 RESERVAS Y LLAMADAS\n" +
-        "986 774 110"
-
-    );
-
-}
-
-
-// =========================================================
-// 🌿 MOSTRAR CATEGORÍAS
-// =========================================================
-
-function mostrarCategorias() {
-
-    cartaScreen.innerHTML = `
-
-        <button
-            class="back-btn"
-            onclick="cerrarCarta()"
-        >
-            ← VOLVER
-        </button>
-
-
-        <div class="carta-header">
-
-            <div class="carta-logo">
-                🌿
-            </div>
-
-            <h1>
-                NUESTRA CARTA
-            </h1>
-
-            <p>
-                SABORES DE LA AMAZONÍA
-            </p>
-
-        </div>
-
-
-        <div class="categories">
-
-
-            <button
-                onclick="mostrarCategoria('entradas')"
+        c.innerHTML=`
+            <img
+                class="photo"
+                src="${img}"
+                alt="${n}"
             >
 
-                🍢
+            <div class="info">
 
-                <span>
-                    ENTRADAS
-                </span>
+                <h3>${n}</h3>
 
-            </button>
+                <p class="desc">
+                    ${d||"Sabor auténtico de la Amazonía."}
+                </p>
 
+                <div class="priceRow">
 
-            <button
-                onclick="mostrarCategoria('sopas')"
-            >
+                    <span class="price">
+                        ${money(p)}
+                    </span>
 
-                🍲
-
-                <span>
-                    SOPAS
-                </span>
-
-            </button>
-
-
-            <button
-                onclick="mostrarCategoria('fondos')"
-            >
-
-                🍽️
-
-                <span>
-                    FONDOS
-                </span>
-
-            </button>
-
-
-            <button
-                onclick="mostrarCategoria('combos')"
-            >
-
-                🍱
-
-                <span>
-                    COMBOS
-                </span>
-
-            </button>
-
-
-            <button
-                onclick="mostrarCategoria('bebidas')"
-            >
-
-                🥤
-
-                <span>
-                    BEBIDAS
-                </span>
-
-            </button>
-
-
-            <button
-                onclick="mostrarCategoria('adicionales')"
-            >
-
-                ➕
-
-                <span>
-                    ADICIONALES
-                </span>
-
-            </button>
-
-        </div>
-
-
-        <div class="carta-message">
-
-            <div>
-                🌴
-            </div>
-
-            <h2>
-                SABORES AMAZÓNICOS
-            </h2>
-
-            <p>
-                Elige una categoría para descubrir
-                nuestros platos.
-            </p>
-
-            <div>
-                🌿
-            </div>
-
-        </div>
-
-    `;
-
-}
-
-
-// =========================================================
-// 🍽️ MOSTRAR PRODUCTOS
-// =========================================================
-
-function mostrarCategoria(categoria) {
-
-    const productos =
-        carta[categoria];
-
-
-    if (!productos) {
-
-        return;
-
-    }
-
-
-    const nombresCategorias = {
-
-        entradas: "ENTRADAS",
-
-        sopas: "SOPAS",
-
-        fondos: "FONDOS",
-
-        combos: "COMBOS",
-
-        bebidas: "BEBIDAS",
-
-        adicionales: "ADICIONALES"
-
-    };
-
-
-    const titulo =
-        nombresCategorias[categoria];
-
-
-    let contenido = `
-
-        <button
-            class="back-btn"
-            onclick="mostrarCategorias()"
-        >
-            ← CATEGORÍAS
-        </button>
-
-
-        <div class="carta-header">
-
-            <div class="carta-logo">
-                🌿
-            </div>
-
-            <h1>
-                ${titulo}
-            </h1>
-
-            <p>
-                SABORES DE LA AMAZONÍA
-            </p>
-
-        </div>
-
-
-        <div class="productos">
-
-    `;
-
-
-    productos.forEach(
-        (producto, indice) => {
-
-            contenido += `
-
-                <article
-                    class="producto-card"
-                >
-
-                    <div class="producto-imagen">
-
-                        <span>
-                            🍽️
-                        </span>
-
-                    </div>
-
-
-                    <div class="producto-info">
-
-                        <h3>
-                            ${producto.nombre}
-                        </h3>
-
-
-                        <p>
-                            ${producto.descripcion}
-                        </p>
-
-
-                        <div class="producto-bottom">
-
-                            <strong>
-                                S/ ${producto.precio.toFixed(2)}
-                            </strong>
-
-
-                            <button
-                                onclick="agregarAlCarrito(
-                                    '${producto.nombre.replace(/'/g, "\\'")}',
-                                    ${producto.precio}
-                                )"
-                            >
-
-                                + PEDIR
-
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-            `;
-
-        }
-    );
-
-
-    contenido += `
-
-        </div>
-
-
-        <div class="carrito-flotante">
-
-            <button
-                onclick="mostrarCarrito()"
-            >
-
-                🛒
-
-                <span>
-                    Ver pedido
-                </span>
-
-                <b id="contadorCarrito">
-                    ${carrito.length}
-                </b>
-
-            </button>
-
-        </div>
-
-    `;
-
-
-    cartaScreen.innerHTML =
-        contenido;
-
-}
-
-
-// =========================================================
-// 🛒 AGREGAR AL CARRITO
-// =========================================================
-
-function agregarAlCarrito(
-    nombre,
-    precio
-) {
-
-    const productoExistente =
-        carrito.find(
-            item =>
-                item.nombre === nombre
-        );
-
-
-    if (productoExistente) {
-
-        productoExistente.cantidad++;
-
-    } else {
-
-        carrito.push({
-
-            nombre: nombre,
-
-            precio: precio,
-
-            cantidad: 1
-
-        });
-
-    }
-
-
-    actualizarContador();
-
-
-    mostrarNotificacion(
-        "🍽️ Agregado al pedido"
-    );
-
-}
-
-
-// =========================================================
-// 🔢 CONTADOR
-// =========================================================
-
-function actualizarContador() {
-
-    const contador =
-        document.getElementById(
-            "contadorCarrito"
-        );
-
-
-    if (contador) {
-
-        const totalProductos =
-            carrito.reduce(
-                (
-                    total,
-                    producto
-                ) =>
-                    total +
-                    producto.cantidad,
-
-                0
-            );
-
-
-        contador.textContent =
-            totalProductos;
-
-    }
-
-}
-
-
-// =========================================================
-// 🔔 NOTIFICACIÓN
-// =========================================================
-
-function mostrarNotificacion(
-    mensaje
-) {
-
-    const notificacion =
-        document.createElement(
-            "div"
-        );
-
-
-    notificacion.className =
-        "notificacion";
-
-
-    notificacion.textContent =
-        mensaje;
-
-
-    document.body.appendChild(
-        notificacion
-    );
-
-
-    setTimeout(
-        () => {
-
-            notificacion.remove();
-
-        },
-
-        1800
-    );
-
-}
-
-
-// =========================================================
-// 🛒 MOSTRAR CARRITO
-// =========================================================
-
-function mostrarCarrito() {
-
-    if (
-        carrito.length === 0
-    ) {
-
-        mostrarNotificacion(
-            "🛒 Tu pedido está vacío"
-        );
-
-        return;
-
-    }
-
-
-    let total = 0;
-
-
-    let productosHTML = "";
-
-
-    carrito.forEach(
-        (
-            producto,
-            indice
-        ) => {
-
-            const subtotal =
-                producto.precio *
-                producto.cantidad;
-
-
-            total += subtotal;
-
-
-            productosHTML += `
-
-                <div class="carrito-item">
-
-                    <div>
-
-                        <strong>
-                            ${producto.nombre}
-                        </strong>
-
-                        <small>
-                            S/ ${producto.precio.toFixed(2)}
-                        </small>
-
-                    </div>
-
-
-                    <div class="cantidad">
-
-                        <button
-                            onclick="cambiarCantidad(
-                                ${indice},
-                                -1
-                            )"
-                        >
-                            −
-                        </button>
-
-
-                        <span>
-                            ${producto.cantidad}
-                        </span>
-
-
-                        <button
-                            onclick="cambiarCantidad(
-                                ${indice},
-                                1
-                            )"
-                        >
-                            +
-                        </button>
-
-                    </div>
-
-
-                    <strong>
-                        S/ ${subtotal.toFixed(2)}
-                    </strong>
+                    <button class="order">
+                        + PEDIR
+                    </button>
 
                 </div>
 
-            `;
+                ${
+                    d==="2X 5.00"
+                    ? '<span class="promo">PROMO · 2 POR S/ 5.00</span>'
+                    : ""
+                }
 
-        }
+            </div>
+        `;
+
+        c.querySelector(".order").onclick=()=>add(x);
+
+        pg.appendChild(c);
+
+    });
+}
+
+/* AGREGAR AL CARRITO */
+
+function add(x){
+
+    let e=cart.find(a=>a.name===x[0]);
+
+    if(e){
+        e.qty++;
+    }else{
+        cart.push({
+            name:x[0],
+            price:x[1],
+            qty:1
+        });
+    }
+
+    save();
+
+    openCart();
+}
+
+/* GUARDAR CARRITO */
+
+function save(){
+
+    localStorage.setItem(
+        "puraSelvaCart",
+        JSON.stringify(cart)
     );
 
+    drawCart();
+}
 
-    cartaScreen.innerHTML = `
+/* DIBUJAR CARRITO */
 
-        <button
-            class="back-btn"
-            onclick="mostrarCategorias()"
-        >
-            ← CARTA
-        </button>
+function drawCart(){
 
+    let q=cart.reduce(
+        (a,x)=>a+x.qty,
+        0
+    );
 
-        <div class="carta-header">
+    let t=cart.reduce(
+        (a,x)=>a+x.price*x.qty,
+        0
+    );
 
-            <div class="carta-logo">
-                🛒
+    $("#cartCount").textContent=q;
+
+    $("#cartTotal").textContent=money(t);
+
+    $("#cartItems").innerHTML=
+        cart.length
+        ?
+        cart.map((x,i)=>`
+
+            <div class="cartItem">
+
+                <div>
+                    <strong>${x.name}</strong>
+                    <small>${money(x.price)} c/u</small>
+                </div>
+
+                <div class="qty">
+
+                    <button
+                        data-i="${i}"
+                        data-a="m">
+                        −
+                    </button>
+
+                    <b>${x.qty}</b>
+
+                    <button
+                        data-i="${i}"
+                        data-a="p">
+                        +
+                    </button>
+
+                </div>
+
             </div>
 
-            <h1>
-                TU PEDIDO
-            </h1>
-
-            <p>
-                Revisa tus productos
-            </p>
-
+        `).join("")
+        :
+        `
+        <div class="empty">
+            Tu pedido está vacío 🌿
+            <br>
+            Agrega algo delicioso.
         </div>
+        `;
 
+    document
+        .querySelectorAll(".qty button")
+        .forEach(b=>{
 
-        <div class="carrito-lista">
+            b.onclick=()=>{
 
-            ${productosHTML}
+                let i=+b.dataset.i;
 
-        </div>
+                if(b.dataset.a==="p"){
 
+                    cart[i].qty++;
 
-        <div class="carrito-total">
+                }else{
 
-            <span>
-                TOTAL
-            </span>
+                    cart[i].qty--;
 
-            <strong>
-                S/ ${total.toFixed(2)}
-            </strong>
+                    if(cart[i].qty<=0){
 
-        </div>
+                        cart.splice(i,1);
 
+                    }
 
-        <button
-            class="whatsapp-pedido"
-            onclick="enviarPedidoWhatsApp()"
-        >
+                }
 
-            💬 ENVIAR PEDIDO POR WHATSAPP
+                save();
 
-        </button>
+            };
 
-
-        <button
-            class="vaciar-pedido"
-            onclick="vaciarCarrito()"
-        >
-
-            🗑️ Vaciar pedido
-
-        </button>
-
-    `;
-
+        });
 }
 
+/* ABRIR CARRITO */
 
-// =========================================================
-// ➕➖ CAMBIAR CANTIDAD
-// =========================================================
+function openCart(){
 
-function cambiarCantidad(
-    indice,
-    cantidad
-) {
+    $("#drawer").classList.add("open");
 
-    carrito[indice].cantidad +=
-        cantidad;
+    $("#overlay").classList.add("show");
+}
 
+/* CERRAR CARRITO */
 
-    if (
-        carrito[indice].cantidad <= 0
-    ) {
+function closeCart(){
 
-        carrito.splice(
-            indice,
-            1
+    $("#drawer").classList.remove("open");
+
+    $("#overlay").classList.remove("show");
+}
+
+/* VOLVER */
+
+$("#backBtn").onclick=()=>{
+
+    prod.classList.remove("active");
+
+    cat.classList.add("active");
+
+    $("#backBtn").hidden=true;
+
+    current=null;
+
+    scrollTo(0,0);
+};
+
+/* BUSCAR */
+
+$("#search").oninput=e=>{
+
+    let q=e.target.value.toLowerCase();
+
+    render(
+        M[current].p.filter(
+            x=>x[0].toLowerCase().includes(q)
+        )
+    );
+};
+
+/* CARRITO */
+
+$("#cartBtn").onclick=openCart;
+
+$("#closeCart").onclick=closeCart;
+
+$("#overlay").onclick=closeCart;
+
+/* VACIAR */
+
+$("#clearCart").onclick=()=>{
+
+    cart=[];
+
+    save();
+
+};
+
+/* =====================================================
+   WHATSAPP
+   ===================================================== */
+
+/*
+   IMPORTANTE:
+   Cambia solamente el número de abajo.
+
+   Ejemplo:
+   999 888 777
+   se escribe:
+   51999888777
+
+   SIN +, SIN ESPACIOS Y SIN GUIONES.
+*/
+
+const WHATSAPP="51940600188";
+
+$("#sendOrder").onclick=()=>{
+
+    if(!cart.length){
+
+        return alert(
+            "Tu pedido está vacío."
         );
 
     }
 
-
-    mostrarCarrito();
-
-}
-
-
-// =========================================================
-// 🗑️ VACIAR CARRITO
-// =========================================================
-
-function vaciarCarrito() {
-
-    carrito = [];
-
-    mostrarCategorias();
-
-    mostrarNotificacion(
-        "🗑️ Pedido eliminado"
+    let t=cart.reduce(
+        (a,x)=>a+x.price*x.qty,
+        0
     );
 
-}
+    let s=cart.map(x=>
+        `${x.qty} x ${x.name} — ${money(x.price*x.qty)}`
+    ).join("\n");
 
+    let mensaje=
+`🌿 *PEDIDO PURA SELVA* 🌿
 
-// =========================================================
-// 💬 ENVIAR PEDIDO POR WHATSAPP
-// =========================================================
+Hola, quiero realizar el siguiente pedido:
 
-function enviarPedidoWhatsApp() {
+${s}
 
-    if (
-        carrito.length === 0
-    ) {
+💰 *TOTAL: ${money(t)}*
 
-        return;
+¡Gracias!`;
 
-    }
-
-
-    let mensaje =
-        "Hola Pura Selva 🌴\n\n" +
-
-        "Quiero realizar el siguiente pedido:\n\n";
-
-
-    let total = 0;
-
-
-    carrito.forEach(
-        producto => {
-
-            const subtotal =
-                producto.precio *
-                producto.cantidad;
-
-
-            total += subtotal;
-
-
-            mensaje +=
-
-                "🍽️ " +
-                producto.cantidad +
-                " x " +
-                producto.nombre +
-                " — S/ " +
-                subtotal.toFixed(2) +
-                "\n";
-
-        }
-    );
-
-
-    mensaje +=
-
-        "\n💰 TOTAL: S/ " +
-        total.toFixed(2) +
-
-        "\n\n" +
-
-        "¿Me pueden confirmar mi pedido?";
-
-
-    const url =
-
-        "https://wa.me/51940600188?text=" +
-
-        encodeURIComponent(
-            mensaje
-        );
-
+    let url=
+        `https://wa.me/${WHATSAPP}?text=${
+            encodeURIComponent(mensaje)
+        }`;
 
     window.open(
         url,
         "_blank"
     );
+};
 
-}
+/* INICIAR */
 
+cats();
 
-// =========================================================
-// 📞 PEDIDO INDIVIDUAL
-// =========================================================
-
-function prepararPedido(
-    nombre,
-    precio
-) {
-
-    const mensaje =
-
-        "Hola Pura Selva 🌴\n\n" +
-
-        "Quiero pedir:\n\n" +
-
-        "🍽️ " +
-        nombre +
-        "\n" +
-
-        "💰 S/ " +
-        precio.toFixed(2) +
-
-        "\n\n" +
-
-        "¿Me pueden confirmar?";
-
-
-    const url =
-
-        "https://wa.me/51940600188?text=" +
-
-        encodeURIComponent(
-            mensaje
-        );
-
-
-    window.open(
-        url,
-        "_blank"
-    );
-
-}
-
-
-// =========================================================
-// ⌨️ ESCAPE
-// =========================================================
-
-document.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (
-            event.key === "Escape"
-        ) {
-
-            cerrarCarta();
-
-        }
-
-    }
-);
-
-
-// =========================================================
-// 🚀 INICIO
-// =========================================================
-
-console.log(
-    "%c🌴 PURA SELVA 🌴",
-    "color:#dcae38;font-size:24px;font-weight:bold;"
-);
-
-
-console.log(
-    "%cCarta digital cargada correctamente.",
-    "color:#65df86;font-size:14px;"
-);
-
-
-console.log(
-    "Productos:",
-    carta
-);
+drawCart();
