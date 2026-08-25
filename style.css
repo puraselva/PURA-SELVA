@@ -945,10 +945,10 @@ main{
 
 .whatsapp2{
   border:1px solid #3e9d69;
-
   background:#083c24;
-
   color:#fff;
+}
+
 /* ICONOS DE WHATSAPP */
 .primary i,
 .whatsapp2 i{
@@ -957,7 +957,6 @@ main{
   vertical-align:middle;
   color:#25D366;
 }
-
 /* ========================================
    OSCURECIMIENTO DEL CARRITO
 ======================================== */
@@ -1036,7 +1035,6 @@ main{
 
   .heading.row{
     flex-direction:column;
-
     align-items:stretch;
   }
 
@@ -1044,30 +1042,87 @@ main{
     width:100%;
   }
 
+  /* PRODUCTOS */
+
+  .productGrid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:16px !important;
+    width:100% !important;
+  }
+
   .productCard{
-    grid-template-columns:1fr;
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    width:100% !important;
+    min-width:0 !important;
+    min-height:0 !important;
+    overflow:hidden !important;
   }
 
   .photo{
-    width:100%;
-    height:235px;
+    display:block !important;
+    width:100% !important;
+    height:230px !important;
+    min-height:230px !important;
+    object-fit:cover !important;
   }
+
+  .info{
+    display:flex !important;
+    width:100% !important;
+    padding:18px !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+  }
+
+  .info h3{
+    font-size:27px !important;
+    line-height:1.1 !important;
+    margin:0 0 8px !important;
+  }
+
+  .desc{
+    font-size:11px !important;
+    line-height:1.5 !important;
+    margin:0 0 14px !important;
+  }
+
+  .priceRow{
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    width:100% !important;
+  }
+
+  .price{
+    display:block !important;
+    font-size:20px !important;
+  }
+
+  .order{
+    display:block !important;
+    padding:10px 14px !important;
+  }
+
+  /* CONTACTO */
 
   .contactBox{
     width:100%;
   }
 
+  /* LOGO */
+
   .logo{
     width:min(340px,85vw);
-
     height:230px;
-
     transform:scale(1.12);
   }
 
+  /* CATEGORÍAS */
+
   .categoryCard{
     min-height:155px;
-
     padding:20px;
   }
 
