@@ -39,7 +39,7 @@ const M={
 "Tragos Amazónicos":{i:"🍹",s:"Licores de la selva",p:[
 ["R.C.",48,"","images/tragos/rc.jpg"],["7 Raices",48,"","images/tragos/7-raices.jpg"],["Uvachado",48,"","images/tragos/uvachado.jpg"]]},
 "Adicicionales":{i:"🥣",s:"Para acompañar tu plato",p:[
-["Rosquita de yuca",3,"2X 5.00","images/adicionales/rosquita-de-yuca.jpg"],["Ñuto",3,"2X 5.00","images/adicionales/nuto.jpg"],["Arroz blanco",8,"","images/adicionales/arroz-blanco.jpg"],["Porción de Maduro",8,"","images/adicionales/porcion-de-maduro.jpg"],["Porcion de patacones",15,"","images/adicionales/porcion-de-patacones.jpg"],["Tacacho",13,"","images/adicionales/tacacho.jpg"]]}
+["Rosquita de yuca",3,"2X 5.00","images/adicionales/rosquita-de-yuca.jpg"],["Ñuto",3,"2X 5.00","images/adicionales/nuto.jpg"],["Arroz blanco",10,"","images/adicionales/arroz-blanco.jpg"],["Porción de Maduro",10,"","images/adicionales/porcion-de-maduro.jpg"],["Porcion de patacones",15,"","images/adicionales/porcion-de-patacones.jpg"],["Tacacho",13,"","images/adicionales/tacacho.jpg"]]}
 };
 
 const WHATSAPP1="51940600188";
