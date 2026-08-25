@@ -1,6 +1,6 @@
 const M = {
   "Entradas": {
-    i: "leaf",
+  i: "sprout",
     s: "Para empezar con sabor amazónico",
     p: [
       ["Brochetas Amazónicas", 20, "Cecina, chorizo, plátano y ensalada de cocona", "images/entradas/brochetas-amazonicas.jpg"],
@@ -10,7 +10,7 @@ const M = {
   },
 
   "Sopas": {
-    i: "soup",
+  i: "cooking-pot",
     s: "Calditos y sabores de nuestra selva",
     p: [
       ["Chilcano de Carachama", 45, "Plátano sancochado y ají charapita", "images/sopas/chilcano-carachama.jpg"],
@@ -23,7 +23,7 @@ const M = {
   },
 
   "Fondos": {
-    i: "utensils",
+  i: "fish",
     s: "Nuestros platos fuertes",
     p: [
       ["Pescado envuelto en hoja", 70, "Tacacho o patacones o plátano asado", "images/fondos/pescado-envuelto-en-hoja.jpg"],
@@ -40,7 +40,7 @@ const M = {
   },
 
   "Combos": {
-    i: "shopping-basket",
+  i: "basket",
     s: "Combos para compartir y disfrutar",
     p: [
       ["Combo Mediano de Juane", 45, "1 juane · 1 cecina frita · 1 chorizo frito · Maduro frito · Salsa de cocona", "images/combos/combo-mediano-juane.jpg"],
@@ -66,7 +66,7 @@ const M = {
   },
 
   "Gaseosas": {
-    i: "cup-soda",
+  i: "citrus",
     s: "Bebidas frías",
     p: [
       ["Agua Mineral", 3, "", "images/gaseosas/agua-mineral.jpg"],
@@ -91,7 +91,7 @@ const M = {
   },
 
   "Tragos Amazónicos": {
-    i: "martini",
+  i: "wine",
     s: "Licores de la selva",
     p: [
       ["R.C.", 48, "", "images/tragos/rc.jpg"],
@@ -101,7 +101,7 @@ const M = {
   },
 
   "Adicicionales": {
-    i: "salad",
+  i: "bowl",
     s: "Para acompañar tu plato",
     p: [
       ["Rosquita de yuca", 3, "2X 5.00", "images/adicionales/rosquita-de-yuca.jpg"],

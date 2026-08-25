@@ -27,9 +27,9 @@ body{
   position:relative;
 }
 
-/* =========================
+/* ========================================
    OSCURECIMIENTO SUAVE DEL FONDO
-========================= */
+======================================== */
 
 body::before{
   content:"";
@@ -41,14 +41,14 @@ body::before{
   background:
     linear-gradient(
       180deg,
-      rgba(0,25,14,.22),
-      rgba(0,18,10,.58)
+      rgba(0,25,14,.20),
+      rgba(0,18,10,.55)
     );
 }
 
-/* =========================
+/* ========================================
    LUCES AMBIENTALES
-========================= */
+======================================== */
 
 .ambient{
   position:fixed;
@@ -80,9 +80,9 @@ input{
   font:inherit;
 }
 
-/* =========================
+/* ========================================
    CABECERA
-========================= */
+======================================== */
 
 .hero{
   max-width:1400px;
@@ -99,28 +99,21 @@ input{
 .ghost,
 .cartMini{
   border:1px solid var(--line);
-
-  background:rgba(2,27,17,.72);
-
+  background:rgba(2,27,17,.78);
   color:var(--gold2);
   border-radius:16px;
   padding:11px 15px;
   font-weight:800;
-
   backdrop-filter:blur(8px);
   -webkit-backdrop-filter:blur(8px);
-
   cursor:pointer;
-
-  box-shadow:
-    0 8px 25px rgba(0,0,0,.22);
+  box-shadow:0 8px 25px rgba(0,0,0,.22);
 }
 
 .ghost:hover,
 .cartMini:hover{
   border-color:var(--gold);
-
-  background:rgba(4,45,26,.82);
+  background:rgba(4,45,26,.90);
 }
 
 .cartMini b{
@@ -131,9 +124,9 @@ input{
   margin-left:4px;
 }
 
-/* =========================
+/* ========================================
    LOGO
-========================= */
+======================================== */
 
 .heroLayout{
   position:relative;
@@ -152,11 +145,8 @@ input{
   width:min(500px,80vw);
   height:280px;
   object-fit:contain;
-
   transform:scale(1.30);
-
-  filter:
-    drop-shadow(0 10px 25px rgba(0,0,0,.60));
+  filter:drop-shadow(0 10px 25px rgba(0,0,0,.60));
 }
 
 .brand div{
@@ -164,30 +154,26 @@ input{
   letter-spacing:.34em;
   color:#e5dcae;
   font-weight:700;
-
-  text-shadow:
-    0 2px 8px #000;
+  text-shadow:0 2px 8px #000;
 }
 
-/* =========================
+/* ========================================
    DELIVERY / CONTACTO
-========================= */
+======================================== */
 
 .contactBox{
   position:absolute;
   right:0;
   top:25px;
-
   width:285px;
   padding:18px 20px;
 
   border:1px solid var(--line);
   border-radius:22px;
 
-  background:rgba(2,30,18,.72);
+  background:rgba(2,30,18,.78);
 
-  box-shadow:
-    0 18px 50px rgba(0,0,0,.35);
+  box-shadow:0 18px 50px rgba(0,0,0,.35);
 
   backdrop-filter:blur(9px);
   -webkit-backdrop-filter:blur(9px);
@@ -212,8 +198,7 @@ input{
 
   padding:10px 0;
 
-  border-top:
-    1px solid rgba(245,201,75,.22);
+  border-top:1px solid rgba(245,201,75,.22);
 }
 
 .contactLine>span{
@@ -228,13 +213,10 @@ input{
 
 .contactLine a{
   display:block;
-
   color:#fff;
   text-decoration:none;
-
   font-weight:800;
   font-size:17px;
-
   margin-top:2px;
 }
 
@@ -246,9 +228,9 @@ input{
   color:var(--gold2);
 }
 
-/* =========================
+/* ========================================
    CONTENIDO PRINCIPAL
-========================= */
+======================================== */
 
 main{
   max-width:1400px;
@@ -274,16 +256,10 @@ main{
 }
 
 .heading h1{
-  font:
-    700 clamp(38px,5vw,60px)
-    Cormorant Garamond,
-    serif;
-
+  font:700 clamp(38px,5vw,60px) Cormorant Garamond,serif;
   color:var(--gold2);
   margin:0;
-
-  text-shadow:
-    0 3px 16px rgba(0,0,0,.7);
+  text-shadow:0 3px 16px rgba(0,0,0,.7);
 }
 
 .heading p{
@@ -291,11 +267,8 @@ main{
   font-size:11px;
   letter-spacing:.2em;
   text-transform:uppercase;
-
   margin:5px;
-
-  text-shadow:
-    0 2px 8px #000;
+  text-shadow:0 2px 8px #000;
 }
 
 .ornament{
@@ -314,31 +287,25 @@ main{
 
 .heading.row input{
   width:280px;
-
   padding:13px;
 
   border-radius:14px;
-
   border:1px solid var(--line);
 
-  background:rgba(3,28,18,.78);
+  background:rgba(3,28,18,.80);
 
   color:#fff;
-
   outline:0;
-
-  backdrop-filter:blur(6px);
-  -webkit-backdrop-filter:blur(6px);
 }
 
 .heading.row input::placeholder{
   color:#aab8ad;
 }
 
-/* ==================================================
+/* ========================================
    CATEGORÍAS
-   EFECTO VERDE TRANSPARENTE / RÚSTICO
-================================================== */
+   TARJETAS TRANSPARENTES
+======================================== */
 
 .categoryGrid{
   display:grid;
@@ -346,32 +313,26 @@ main{
   gap:18px;
 }
 
-/* TARJETA PRINCIPAL */
-
 .categoryCard{
   position:relative;
-
   text-align:left;
 
-  border:
-    1px solid rgba(245,201,75,.42);
-
+  border:1px solid rgba(245,201,75,.50);
   border-radius:24px;
 
   padding:24px;
-
   min-height:170px;
 
   /*
-     VERDE OSCURO TRANSPARENTE
-     para que se vea la selva detrás
+     VERDE TRANSPARENTE
+     Se puede ver la selva detrás.
   */
-
   background:
-    linear-gradient(
-      145deg,
-      rgba(4,59,34,.62),
-      rgba(1,30,18,.58)
+  linear-gradient(
+    145deg,
+    rgba(4,59,34,.38),
+    rgba(1,30,18,.45)
+
     );
 
   color:#fff;
@@ -387,120 +348,206 @@ main{
 
   cursor:pointer;
 
-  backdrop-filter:blur(4px);
-  -webkit-backdrop-filter:blur(4px);
-
-  overflow:hidden;
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
 }
-
-/* BRILLO MUY SUTIL */
-
-.categoryCard::before{
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(255,255,255,.045),
-      transparent 35%,
-      transparent 70%,
-      rgba(245,201,75,.025)
-    );
-
-  pointer-events:none;
-}
-
-/* EFECTO AL PASAR EL MOUSE */
 
 .categoryCard:hover{
+  transform:translateY(-5px);
 
-  transform:
-    translateY(-5px);
-
-  border-color:
-    rgba(245,201,75,.78);
+  border-color:rgba(255,226,122,.90);
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(5,68,39,.70),
-      rgba(2,35,21,.64)
-    );
+  linear-gradient(
+    145deg,
+    rgba(5,70,40,.35),
+    rgba(1,35,21,.42)
+  );
 
   box-shadow:
-    0 22px 55px rgba(0,0,0,.48),
-    0 0 25px rgba(245,201,75,.08);
+    0 22px 55px rgba(0,0,0,.45),
+    0 0 25px rgba(245,201,75,.10);
 }
 
-/* =========================
-   ÍCONOS NUEVOS
-========================= */
+/* ========================================
+   ICONOS AMAZÓNICOS - ESTILO RÚSTICO
+======================================== */
 
 .categoryCard .icon{
+  width:92px !important;
+  height:92px !important;
 
-  width:52px;
-  height:52px;
+  flex:none;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display:block !important;
 
-  border-radius:15px;
+  margin:0 18px 0 0 !important;
+  padding:0 !important;
 
-  color:var(--gold2);
+  border:0 !important;
+  border-radius:0 !important;
 
-  background:
-    rgba(0,0,0,.13);
+  background-color:transparent !important;
+  background-repeat:no-repeat !important;
+  background-position:center !important;
+  background-size:contain !important;
 
-  border:
-    1px solid rgba(245,201,75,.22);
+  font-size:0 !important;
+  line-height:0 !important;
 
-  margin-bottom:13px;
+  color:transparent !important;
+
+  text-shadow:none !important;
+
+  filter:
+    drop-shadow(0 3px 5px rgba(0,0,0,.35));
 
   transition:
     transform .25s ease,
-    background .25s ease,
-    border-color .25s ease;
+    filter .25s ease;
 }
 
-.categoryCard .icon svg{
+/* ========================================
+   ICONOS LINEALES
+======================================== */
 
-  width:29px;
-  height:29px;
-
-  stroke-width:1.65;
-
-  filter:
-    drop-shadow(
-      0 2px 5px rgba(0,0,0,.35)
-    );
+/* ENTRADAS - HOJA */
+.categoryCard:nth-child(1) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 90V10'/%3E%3Cpath d='M50 76C35 70 24 57 22 39C37 40 48 47 50 60'/%3E%3Cpath d='M50 62C65 57 76 44 78 26C63 28 53 37 50 49'/%3E%3Cpath d='M50 47C39 41 32 32 31 20C43 21 49 28 50 37'/%3E%3Cpath d='M50 31C59 26 65 19 66 10C57 11 51 16 50 23'/%3E%3C/g%3E%3C/svg%3E");
 }
+
+/* SOPAS - OLLA */
+.categoryCard:nth-child(2) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M35 30C30 24 35 18 31 13'/%3E%3Cpath d='M50 30C45 24 50 18 46 12'/%3E%3Cpath d='M65 30C60 24 65 18 61 13'/%3E%3Cpath d='M20 40H80'/%3E%3Cpath d='M25 40C26 62 35 73 50 73S74 62 75 40'/%3E%3Cpath d='M32 55H68'/%3E%3Cpath d='M38 63C43 58 47 68 52 62S61 58 66 64'/%3E%3Cpath d='M15 45H25M75 45H85'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* FONDOS - HOJA / PLANTA */
+.categoryCard:nth-child(3) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='50' cy='50' r='35'/%3E%3Cpath d='M50 79V21'/%3E%3Cpath d='M50 62C39 57 31 48 30 36C42 38 49 45 50 53'/%3E%3Cpath d='M50 51C61 46 68 37 69 25C58 27 51 35 50 43'/%3E%3Cpath d='M50 38C43 34 39 28 39 21C46 23 50 27 50 32'/%3E%3Cpath d='M50 68C58 64 64 58 66 50'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* COMBOS - CANASTA */
+.categoryCard:nth-child(4) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 40H80L72 76H28Z'/%3E%3Cpath d='M28 48H72M25 57H75M27 66H73'/%3E%3Cpath d='M30 40C31 22 42 14 50 14C59 14 69 23 70 40'/%3E%3Cpath d='M50 14V7'/%3E%3Cpath d='M50 25L58 18'/%3E%3Cpath d='M50 25L43 18'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* BEBIDAS - VASO CON SORBETE */
+.categoryCard:nth-child(5) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M63 38L73 14H82'/%3E%3Cpath d='M28 35H72L66 82H34Z'/%3E%3Cpath d='M32 49H69'/%3E%3Cpath d='M39 58C44 53 48 64 53 58S62 53 67 59'/%3E%3Cpath d='M27 29H73'/%3E%3Cpath d='M21 29H28'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* GASEOSAS - VASO */
+.categoryCard:nth-child(6) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M25 27H75L69 82H31Z'/%3E%3Cpath d='M29 45H71'/%3E%3Ccircle cx='42' cy='58' r='5'/%3E%3Ccircle cx='59' cy='69' r='4'/%3E%3Cpath d='M63 27L72 12'/%3E%3Cpath d='M72 12H82'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* CERVEZAS - JARRA */
+.categoryCard:nth-child(7) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M28 35H68V80H32Z'/%3E%3Cpath d='M68 43H78C85 43 87 50 87 57S85 70 78 70H68'/%3E%3Cpath d='M28 35C27 27 33 21 40 25C45 17 54 18 57 25C65 20 71 27 68 35'/%3E%3Cpath d='M39 43V74M50 43V74M61 43V74'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* TRAGOS AMAZÓNICOS - COPA */
+.categoryCard:nth-child(8) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M25 20H75L68 48C65 59 58 65 50 65S35 59 32 48Z'/%3E%3Cpath d='M50 65V82'/%3E%3Cpath d='M36 84H64'/%3E%3Cpath d='M40 43C45 38 49 49 54 43S63 38 67 44'/%3E%3Cpath d='M61 25L76 12'/%3E%3Cpath d='M76 12H83'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ADICIONALES - PLATO AMAZÓNICO */
+.categoryCard:nth-child(9) .icon{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23d88932' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 43H80C78 65 68 76 50 76S22 65 20 43Z'/%3E%3Cpath d='M30 51H70M34 60H66'/%3E%3Cpath d='M50 43V18'/%3E%3Cpath d='M50 29C41 26 36 20 36 14C44 15 49 20 50 25'/%3E%3Cpath d='M50 32C59 28 65 22 66 15C58 16 52 21 50 27'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ========================================
+   MOVIMIENTO DE LOS ICONOS
+======================================== */
 
 .categoryCard:hover .icon{
+  transform:translateY(-3px) scale(1.04);
 
-  transform:
-    translateY(-2px)
-    scale(1.05);
-
-  background:
-    rgba(245,201,75,.08);
-
-  border-color:
-    rgba(245,201,75,.45);
+  filter:
+    drop-shadow(0 4px 8px rgba(216,137,50,.30));
 }
 
-/* =========================
-   TÍTULO CATEGORÍA
-========================= */
+/* ========================================
+   ORGANIZACIÓN DE TARJETA
+======================================== */
+
+.categoryCard{
+  display:flex !important;
+  align-items:center;
+  gap:4px;
+}
 
 .categoryCard h2{
+  font:
+    700 34px
+    Cormorant Garamond,
+    serif;
 
+  color:var(--gold2);
+
+  margin:0 0 8px;
+
+  text-shadow:
+    0 2px 8px rgba(0,0,0,.65);
+}
+
+.categoryCard p{
+  font-family:Montserrat,sans-serif;
+
+  font-size:11px;
+
+  color:#d1d9d3;
+
+  margin:0;
+
+  line-height:1.5;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,.50);
+}
+
+/* ========================================
+   CONTENEDOR DEL TEXTO
+======================================== */
+
+.categoryCard h2,
+.categoryCard p{
   position:relative;
+}
 
+/* ========================================
+   FLECHA
+======================================== */
+
+.categoryCard .arrow{
+  position:absolute;
+
+  right:20px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  color:#d88932;
+
+  font-size:28px;
+
+  transition:
+    transform .25s ease,
+    color .25s ease;
+}
+
+.categoryCard:hover .arrow{
+  transform:
+    translateY(-50%)
+    translateX(6px);
+
+  color:#f2ad55;
+}
+/* ========================================
+   TITULO DE CATEGORÍA
+======================================== */
+
+.categoryCard h2{
   font:
     700 34px
     Cormorant Garamond,
@@ -511,36 +558,29 @@ main{
   margin:8px 0;
 
   text-shadow:
-    0 2px 10px rgba(0,0,0,.65);
+    0 2px 8px rgba(0,0,0,.65);
 }
 
-/* =========================
-   DESCRIPCIÓN
-========================= */
-
 .categoryCard p{
-
-  position:relative;
+  font-family:Montserrat,sans-serif;
 
   font-size:11px;
 
-  color:
-    rgba(224,231,225,.82);
-
-  line-height:1.5;
+  color:#d1d9d3;
 
   margin:0;
 
+  line-height:1.5;
+
   text-shadow:
-    0 1px 5px rgba(0,0,0,.6);
+    0 2px 6px rgba(0,0,0,.50);
 }
 
-/* =========================
+/* ========================================
    FLECHA
-========================= */
+======================================== */
 
-.arrow{
-
+.categoryCard .arrow{
   position:absolute;
 
   right:20px;
@@ -551,22 +591,21 @@ main{
   font-size:22px;
 
   transition:
-    transform .25s ease;
+    transform .25s ease,
+    color .25s ease;
 }
 
 .categoryCard:hover .arrow{
+  transform:translateX(5px);
 
-  transform:
-    translateX(5px);
-
+  color:var(--gold2);
 }
 
-/* =========================
+/* ========================================
    CIERRE
-========================= */
+======================================== */
 
 .closing{
-
   text-align:center;
 
   color:var(--gold2);
@@ -578,56 +617,47 @@ main{
 
   margin:28px 0 0;
 
-  text-shadow:
-    0 2px 10px #000;
+  text-shadow:0 2px 10px #000;
 }
 
-/* =========================
+/* ========================================
    PRODUCTOS
-========================= */
+======================================== */
 
 .productGrid{
-
   display:grid;
-
-  grid-template-columns:
-    repeat(2,1fr);
-
+  grid-template-columns:repeat(2,1fr);
   gap:20px;
 }
 
 .productCard{
-
   display:grid;
-
-  grid-template-columns:
-    190px 1fr;
+  grid-template-columns:190px 1fr;
 
   min-height:190px;
 
-  border:
-    1px solid var(--line);
-
+  border:1px solid var(--line);
   border-radius:24px;
 
   overflow:hidden;
 
   background:
-    linear-gradient(
-      145deg,
-      rgba(7,58,34,.96),
-      rgba(3,29,17,.96)
-    );
+  linear-gradient(
+    145deg,
+    rgba(4,59,34,.25),
+    rgba(1,30,18,.32)
+  );
 
   box-shadow:
     0 18px 50px rgba(0,0,0,.42);
+
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
 }
 
 .photo{
-
   width:190px;
   height:100%;
-
   min-height:190px;
 
   object-fit:cover;
@@ -636,7 +666,6 @@ main{
 }
 
 .info{
-
   padding:20px;
 
   display:flex;
@@ -645,7 +674,6 @@ main{
 }
 
 .info h3{
-
   font:
     700 29px/1
     Cormorant Garamond,
@@ -657,9 +685,7 @@ main{
 }
 
 .desc{
-
   font-size:11px;
-
   line-height:1.5;
 
   color:#c1cbc3;
@@ -668,29 +694,23 @@ main{
 }
 
 .priceRow{
-
   display:flex;
 
   justify-content:space-between;
-
   align-items:center;
 
   gap:10px;
 }
 
 .price{
-
   font-size:20px;
-
   font-weight:800;
 
   color:var(--gold2);
 }
 
 .order{
-
   border:0;
-
   border-radius:13px;
 
   padding:11px 16px;
@@ -709,20 +729,17 @@ main{
   cursor:pointer;
 
   box-shadow:
-    0 5px 15px rgba(0,0,0,.2);
+    0 5px 15px rgba(0,0,0,.20);
+
+  transition:.2s;
 }
 
 .order:hover{
-
-  transform:
-    translateY(-1px);
-
-  filter:
-    brightness(1.05);
+  transform:translateY(-1px);
+  filter:brightness(1.05);
 }
 
 .promo{
-
   font-size:10px;
 
   color:var(--gold2);
@@ -732,12 +749,11 @@ main{
   margin-top:7px;
 }
 
-/* =========================
+/* ========================================
    CARRITO
-========================= */
+======================================== */
 
 .drawer{
-
   position:fixed;
 
   right:0;
@@ -750,42 +766,32 @@ main{
 
   background:#031b11;
 
-  border-left:
-    1px solid var(--line);
+  border-left:1px solid var(--line);
 
-  transform:
-    translateX(110%);
+  transform:translateX(110%);
 
   transition:.3s;
 
   display:flex;
-
   flex-direction:column;
 
-  box-shadow:
-    -20px 0 70px #0008;
+  box-shadow:-20px 0 70px #0008;
 }
 
 .drawer.open{
-
-  transform:
-    translateX(0);
+  transform:translateX(0);
 }
 
 .drawerHead{
-
   padding:22px;
 
-  border-bottom:
-    1px solid #fff1;
+  border-bottom:1px solid #fff1;
 
   display:flex;
-
   justify-content:space-between;
 }
 
 .drawerHead small{
-
   color:var(--gold);
 
   font-weight:800;
@@ -794,7 +800,6 @@ main{
 }
 
 .drawerHead h2{
-
   font:
     700 30px
     Cormorant Garamond,
@@ -806,9 +811,7 @@ main{
 }
 
 .drawerHead button{
-
-  background:0;
-
+  background:transparent;
   border:0;
 
   color:#fff;
@@ -819,7 +822,6 @@ main{
 }
 
 .cartItems{
-
   flex:1;
 
   overflow:auto;
@@ -828,7 +830,6 @@ main{
 }
 
 .empty{
-
   text-align:center;
 
   color:#8f9f94;
@@ -837,27 +838,22 @@ main{
 }
 
 .cartItem{
-
   display:grid;
 
-  grid-template-columns:
-    1fr auto;
+  grid-template-columns:1fr auto;
 
   gap:10px;
 
   padding:14px 0;
 
-  border-bottom:
-    1px solid #fff1;
+  border-bottom:1px solid #fff1;
 }
 
 .cartItem strong{
-
   color:var(--cream);
 }
 
 .cartItem small{
-
   display:block;
 
   color:#98a69c;
@@ -866,7 +862,6 @@ main{
 }
 
 .qty{
-
   display:flex;
 
   align-items:center;
@@ -875,16 +870,13 @@ main{
 }
 
 .qty button{
-
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   background:#07351f;
 
   color:var(--gold2);
 
   width:28px;
-
   height:28px;
 
   border-radius:8px;
@@ -893,15 +885,12 @@ main{
 }
 
 .drawerFoot{
-
   padding:20px;
 
-  border-top:
-    1px solid #fff1;
+  border-top:1px solid #fff1;
 }
 
 .total{
-
   display:flex;
 
   justify-content:space-between;
@@ -912,14 +901,12 @@ main{
 }
 
 .total b{
-
   color:var(--gold2);
 }
 
 .secondary,
 .primary,
 .whatsapp2{
-
   width:100%;
 
   padding:12px;
@@ -932,11 +919,9 @@ main{
 }
 
 .secondary{
-
   background:transparent;
 
-  border:
-    1px solid var(--line);
+  border:1px solid var(--line);
 
   color:#fff;
 
@@ -944,7 +929,6 @@ main{
 }
 
 .primary{
-
   border:0;
 
   background:
@@ -960,21 +944,25 @@ main{
 }
 
 .whatsapp2{
-
-  border:
-    1px solid #3e9d69;
+  border:1px solid #3e9d69;
 
   background:#083c24;
 
   color:#fff;
+/* ICONOS DE WHATSAPP */
+.primary i,
+.whatsapp2 i{
+  font-size:18px;
+  margin-right:6px;
+  vertical-align:middle;
+  color:#25D366;
 }
 
-/* =========================
-   OVERLAY
-========================= */
+/* ========================================
+   OSCURECIMIENTO DEL CARRITO
+======================================== */
 
 .overlay{
-
   position:fixed;
 
   inset:0;
@@ -991,27 +979,24 @@ main{
 }
 
 .overlay.show{
-
   opacity:1;
 
   pointer-events:auto;
 }
 
-/* =========================
+/* ========================================
    TABLET
-========================= */
+======================================== */
 
 @media(max-width:1100px){
 
   .contactBox{
-
     position:static;
 
     margin:10px auto 0;
   }
 
   .heroLayout{
-
     flex-direction:column;
 
     align-items:center;
@@ -1020,71 +1005,59 @@ main{
   }
 
   .categoryGrid{
-
-    grid-template-columns:
-      repeat(2,1fr);
+    grid-template-columns:repeat(2,1fr);
   }
+
 }
 
-/* =========================
+/* ========================================
    CELULAR
-========================= */
+======================================== */
 
 @media(max-width:650px){
 
   .hero,
   main{
-
     padding-left:15px;
     padding-right:15px;
   }
 
   .topbar{
-
     gap:10px;
   }
 
   .cartMini span{
-
     display:none;
   }
 
   .categoryGrid{
-
     grid-template-columns:1fr;
   }
 
   .heading.row{
-
     flex-direction:column;
 
     align-items:stretch;
   }
 
   .heading.row input{
-
     width:100%;
   }
 
   .productCard{
-
     grid-template-columns:1fr;
   }
 
   .photo{
-
     width:100%;
-
     height:235px;
   }
 
   .contactBox{
-
     width:100%;
   }
 
   .logo{
-
     width:min(340px,85vw);
 
     height:230px;
@@ -1092,27 +1065,24 @@ main{
     transform:scale(1.12);
   }
 
-  /* Ajuste de tarjetas en celular */
-
   .categoryCard{
-
     min-height:155px;
 
     padding:20px;
-
-    border-radius:21px;
-
-    background:
-      linear-gradient(
-        145deg,
-        rgba(4,59,34,.66),
-        rgba(1,30,18,.60)
-      );
   }
 
   .categoryCard h2{
+    font-size:30px;
+  }
 
-    font-size:31px;
+  .categoryCard .icon{
+    width:44px !important;
+    height:44px !important;
+    margin-bottom:10px !important;
+  }
+
+  .categoryCard .icon::before{
+    font-size:23px;
   }
 
 }
