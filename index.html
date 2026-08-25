@@ -1,39 +1,70 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>PURA SELVA | Sabores de la Amazonía</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bgOverlay"></div>
 <div class="ambient a1"></div><div class="ambient a2"></div>
+
 <header class="hero">
   <div class="topbar">
     <button id="backBtn" class="ghost" hidden>← CATEGORÍAS</button>
     <button id="cartBtn" class="cartMini">🛒 <span>Ver pedido</span> <b id="cartCount">0</b></button>
   </div>
-  <div class="brand">
-    <img src="images/logo-pura-selva.png" alt="Pura Selva" class="logo">
-    <div>SABORES DE LA AMAZONÍA</div>
+
+  <div class="heroLayout">
+    <div class="brand">
+      <img src="images/logo-pura-selva.png" alt="Pura Selva" class="logo">
+      <div>SABORES DE LA AMAZONÍA</div>
+    </div>
+
+    <div class="contactBox">
+      <div class="contactTitle">🛵 <strong>DELIVERY</strong></div>
+      <div class="contactSub">¡Te lo llevamos hasta tu puerta!</div>
+      <div class="contactLine"><span>💬</span><div><small>Pedidos por WhatsApp</small><a href="https://wa.me/51940600188" target="_blank">940 600 188</a></div></div>
+      <div class="contactLine"><span>💬</span><div><small>Pedidos por WhatsApp</small><a href="https://wa.me/51925928838" target="_blank">925 928 838</a></div></div>
+      <div class="contactLine reserve"><span>📞</span><div><small>Reserva tu mesa</small><a href="tel:987654321">987 654 321</a></div></div>
+    </div>
   </div>
 </header>
+
 <main>
 <section id="categories" class="view active">
-  <div class="heading"><span>🌿</span><h1>Nuestra carta</h1><p>El sabor de la selva, directo a tu mesa</p></div>
+  <div class="heading">
+    <span>🌿</span>
+    <h1>Nuestra carta</h1>
+    <p>El sabor de la selva, directo a tu mesa</p>
+    <div class="ornament">━━ • ━━</div>
+  </div>
   <div id="categoryGrid" class="categoryGrid"></div>
+  <div class="closing">Gracias por elegir lo natural 💚</div>
 </section>
+
 <section id="products" class="view">
-  <div class="heading row"><div><span id="catIcon">🌿</span><h1 id="catTitle"></h1><p id="catSub"></p></div>
-  <input id="search" type="search" placeholder="Buscar en esta categoría..."></div>
+  <div class="heading row">
+    <div><span id="catIcon">🌿</span><h1 id="catTitle"></h1><p id="catSub"></p></div>
+    <input id="search" type="search" placeholder="Buscar en esta categoría...">
+  </div>
   <div id="productGrid" class="productGrid"></div>
 </section>
 </main>
+
 <aside id="drawer" class="drawer">
   <div class="drawerHead"><div><small>TU PEDIDO</small><h2>Lo que elegiste</h2></div><button id="closeCart">✕</button></div>
   <div id="cartItems" class="cartItems"></div>
-  <div class="drawerFoot"><div class="total"><span>Total</span><b id="cartTotal">S/ 0.00</b></div>
-    <button id="clearCart" class="secondary">Vaciar pedido</button><button id="sendOrder" class="primary">Enviar pedido</button>
+  <div class="drawerFoot">
+    <div class="total"><span>Total</span><b id="cartTotal">S/ 0.00</b></div>
+    <button id="clearCart" class="secondary">Vaciar pedido</button>
+    <button id="sendOrder" class="primary">💬 Enviar al WhatsApp 940 600 188</button>
+    <button id="sendOrder2" class="whatsapp2">💬 Enviar al WhatsApp 925 928 838</button>
   </div>
-</aside><div id="overlay" class="overlay"></div>
+</aside>
+<div id="overlay" class="overlay"></div>
+
 <script src="script.js"></script>
-</body></html>
+</body>
+</html>
